@@ -1,0 +1,19 @@
+server:
+    port: 8080
+spring:
+    datasource:
+        name: data
+        url: jdbc:mysql://127.0.0.1:3306/db_tdct?useUnicode=true&characterEncoding=UTF8
+        username: root
+        password:
+        driver-class-name: com.mysql.jdbc.Driver
+        maxActive: 20
+        initialSize: 5
+        maxWait: 30000
+        minIdle: 5
+        maxIdle: 10
+        removeAbandonedTimeout: 120
+        testOnBorrow: true
+        testWhileIdle: true
+        testOnReturn: false
+        validationQuery: select 1
